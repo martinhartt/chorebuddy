@@ -57,56 +57,25 @@
         </div>
     </div>
 
-    <!-- div for FAQ -->
-
-    <div class="container" id="faq">
-      <h2 class="text-center">FAQ</h3>
-      <div class="row">
-        <div class="col-md-4">
-          <h3>Who gets to delegate the tasks?</h3>
-          <p>ChoreBuddy randomly assigns tasks to users based mostly on their preferred days. The manager can only add users and monitor completion of tasks.</p>
-        </div>
-        <div class="col-md-4">
-          <h3>How will I be reminded that I have a task to complete?</h3>
-          <p>The manager will have inputted your phone number on the sign up form, you will receive a text message 20 minutes before you have a task reminding you of what needs to be done.</p>
-        </div>
-        <div class="col-md-4">
-          <h3>How do I let people know that I finished my task?</h3>
-          <p>In your text message, you should receive a link where you can confirm that you've completed a task, send this with a picture (e.g. dishes washed) to let your manager know you actually finished your assigned task!</p>
-        </div>
-      </div>
-    </div>
-
 
 
     <div class="container" id="signUp">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 ">
-                <h2 class="text-center">Register Household</h3>
+                <h2 class="text-center">Add Chore</h3>
 
-                <form class="houseform" action="Users.html" method="GET" >
+                <form class="houseform" action="Complete.html" method="GET" >
                     <!-- name -->
                     <div class="form-group">
-                            <label for="userName">Name</label>
-                            <input type="text" class="form-control" name="username" id="userName" placeholder="Enter Your name">
+                            <label for="userName">Name of chore (Shopping, Cooking, etc.)</label>
+                            <input type="text" class="form-control" name="username" id="userName" placeholder="Enter their name">
                     </div>
 
-                    <!-- phone number -->
-                    <div class="form-group">
-                            <label for="imputEmail">Phone number</label>
-                            <input type="text" class="form-control" name="phoneNumber" id="userEmail" placeholder="Enter Your Phone Number">
-                    </div>
-
-                    <!-- name of house hold -->
-                    <div class="form-group">
-                            <label for="imputEmail">HouseHold Name</label>
-                            <input type="text" class="form-control" name="housename" id="userEmail" placeholder="Enter Your HouseHold Name">
-                    </div>
 
                     <!-- prefered days -->
 
                     <div class="form-group">
-                            <label for="imputEmail">Prefered Days</label>
+                            <label for="imputEmail">Days</label>
                             <div class="checkbox">
                                 <label>
                                     <input class="mondaycheck" type="checkbox"> Monday
@@ -131,8 +100,14 @@
                             </div>
                     </div>
 
-                    <!-- submit -->
-                    <button type="submit" class="btn btn-default">Submit</button>
+                        <!-- name -->
+                        <div class="form-group">
+                                <label for="userName">Time</label>
+                                <input type="text" class="form-control" name="username" id="userName" placeholder="Enter their name">
+                        </div>
+                        
+                      <a href="Chores.html" class="btn btn-default">Add More</a>
+                      <a href="Complete.html" class="btn btn-default">Continue</a>
 
                 </form>
             </div>
@@ -141,5 +116,13 @@
 
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js "></script>
+    <script>
+$('form')[0].onsubmit=function(e){e.preventDefault(); console.log('hi')};
+
+    </script>
+</body>
 
 </html>

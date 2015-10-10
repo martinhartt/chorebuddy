@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="Luxman Elangeswaralingam">
+    <meta name="keywords" content="ChoreBuddy">
+    <meta name="description" content="ChoreBuddy is a web application that allows the user to share responsibilities between peeple living under the same roof">
+
+    <title>ChoreBuddy</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/websitestyle.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsedButtons" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+            </div>
+            <!-- end of nav header -->
+
+            <div class=" collapse navbar-collapse" id="collapsedButtons">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="signUp"><a href="#">Sign up</a></li>
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <!-- end of buttons -->
+
+        </div>
+        <!-- end of container -->
+
+    </nav>
+    <!-- end of navbar-->
+    <div class="container-fluid" id="home">
+        <div class="row rowHomepage">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center coloumn_onHomePage">
+
+                <div id="rectangle_BG"></div>
+                <h1 id="name">ChoreBuddy</h1>
+                <h4 id="description">Makes house sharing easy  &#38 Simple </h4>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container" id="signUp">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 ">
+                <h2 class="text-center">Add User</h3>
+
+                <form class="houseform" action="Chores.html" method="GET" >
+                    <!-- name -->
+                    <div class="form-group">
+                            <label for="userName">Name</label>
+                            <input type="text" class="form-control" name="username" id="userName" placeholder="Enter their name">
+                    </div>
+
+                    <!-- phone number -->
+                    <div class="form-group">
+                            <label for="imputEmail">Phone number</label>
+                            <input type="text" class="form-control" name="phoneNumber" id="userEmail" placeholder="Enter their Phone Number">
+                    </div>
+
+                      <a href="Users.html" class="btn btn-default">Add More</a>
+                      <a href="Chores.html" class="btn btn-default">Continue</a>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js "></script>
+    <script>
+$('form')[0].onsubmit=function(e){e.preventDefault(); console.log('hi')};
+
+    </script>
+</body>
+
+</html>
