@@ -36,7 +36,7 @@
 
             <div class=" collapse navbar-collapse" id="collapsedButtons">
                 <ul class="nav navbar-nav pull-right">
-                    <li class="#"><a href="#"> Sing up</a></li>
+                    <li class="singUp"><a href="#"> Sing up</a></li>
                     <li><a href="#"> Log in</a></li>
                     <li><a href="#"> FAQ</a></li>
                 </ul>
@@ -51,13 +51,95 @@
     <div class="container-fluid" id="home">
         <div class="row rowHomepage">
             <div class="col-xs-12 col-sm-12 col-md-12 text-center coloumn_onHomePage">
+
                 <div id="rectangle_BG"></div>
                 <h1 id="name">ChoreBuddy</h1>
                 <h4 id="description">Makes house sharing easy  &#38 Simple </h4>
+
             </div>
         </div>
     </div>
-   
+
+    <!-- div for FAQ -->
+
+    <div class="container" id="faq"></div>
+
+    <div class="container" id="signUp">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center ">
+                <h3 class="text-center"> Register Household</h3>
+                <form class="form-horizontal">
+                    <!-- name -->
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <label for="imputName">Name</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Enter Your name">
+                        </div>
+                    </div>
+                    <!-- email -->
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <label for="imputEmail">Email</label>
+                            <input type="email" class="form-control" id="userEmail" placeholder="Enter Your Email">
+                        </div>
+                    </div>
+
+                    <!-- phone number -->
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <label for="imputEmail">Phone number</label>
+                            <input type="text" class="form-control" id="userEmail" placeholder="Enter Your Phone Number">
+                        </div>
+                    </div>
+
+                    <!-- name of house hold -->
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <label for="imputEmail">HouseHold Name</label>
+                            <input type="text" class="form-control" id="userEmail" placeholder="Enter Your HouseHold Name">
+                        </div>
+                    </div>
+
+                    <!-- prefered days -->
+
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <label for="imputEmail">Prefered Days</label>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Monday
+                                </label>
+                                <label>
+                                    <input type="checkbox"> Tuesday
+                                </label>
+                                <label>
+                                    <input type="checkbox"> Wednesday
+                                </label>
+                                <label>
+                                    <input type="checkbox"> Thursday
+                                </label>
+                                <label>
+                                    <input type="checkbox"> Friday
+                                </label>
+                                <label>
+                                    <input type="checkbox"> Saturday
+                                </label>
+                                <label>
+                                    <input type="checkbox"> Sunday</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- submit -->
+                    <button type="submit" class="btn btn-default">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js "></script>

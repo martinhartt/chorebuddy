@@ -11,16 +11,23 @@
 
 .nav.navbar-nav.pull-right li a {
     color: #e6e6e6;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    color: #262626;
+    color: #e8e4e4;
 }
 
+#name {
+    color: #f2f2f2;
+}
+
+#description {
+    color: #f2f2f2;
+}
 
 #home {
-    background-image: url(.././images/BG_image2.jpg);
+    background-image: url(.././images/bg_img1.jpeg);
     background-attachment: fixed;
     height: 550px;
     position: relative;
@@ -46,9 +53,8 @@
     position: relative;
 }
 
-
 @media (max-width: 480px) {
-  /* This query is used for very small screens  */
+    /* This query is used for very small screens  */
     #rectangle_BG {
         position: absolute;
         left: 50%;
@@ -124,18 +130,7 @@
     }
 }
 
-/* css for about section */
 
-#about{
-background-color: #F7F7F7;
-    height: 550px;
-}
 
-#projects{
-    background-color: #1c1b1b;
-    height: 550px;
-}
-#contacts {
-	background-color: #3f7e7e;
-    height: 550px;
-}
+
+
