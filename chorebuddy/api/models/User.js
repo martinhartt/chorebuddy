@@ -8,17 +8,23 @@
 module.exports = {
 
   attributes: {
-    id: {
+    id:{
       type: 'integer',
       unique: true,
       primaryKey: true,
     },
-    name: {
+    name:{
       type: 'string',
     },
-    house: {
-      model: 'House',
+    house:{
+      model: 'User'
       required: true,
+    },
+    preferedDate:{
+      type: 'date'
+    },
+    tasksDone: {
+      type: 'array'
     },
   }
 };
