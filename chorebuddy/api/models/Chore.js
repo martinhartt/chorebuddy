@@ -13,7 +13,7 @@ module.exports = {
   		primaryKey: true,
   		unique: true,
   	},
-  	choreName:{
+  	name:{
   		type: 'string',
   		required: true,
   	},
@@ -22,10 +22,13 @@ module.exports = {
   		enum: ['daily', 'weekly', 'monthly'];
   		required: true,
   	},
+    days: {
+      type: 'array',
+      defaultsTo: [],
+    },
   	time{
   		type: 'string',
   		required: true,
   	}
   }
 };
-
