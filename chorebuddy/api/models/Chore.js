@@ -19,7 +19,7 @@ module.exports = {
   	},
   	repetition:{
   		type: 'string',
-  		enum: ['daily', 'weekly', 'monthly'],
+  		enum: ['daily', 'weekly'],
   		required: true,
   	},
     days: {
