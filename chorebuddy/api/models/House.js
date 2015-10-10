@@ -20,7 +20,7 @@ module.exports = {
     name:{
       type: 'string',
     },
-  	Housemates:{
+  	members:{
   		collection: 'User',
   		via: 'house',
   	},

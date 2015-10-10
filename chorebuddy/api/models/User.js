@@ -20,16 +20,17 @@ module.exports = {
       model: 'House',
       required: true,
     },
-    isHead: {
-      type: 'model',
-      required: true,
+    isManager: {
+      type: 'boolean',
+      defaultsTo: false,
     },
-    preferedDate: {
-      type: 'date'
+    preferedDays: {
+      type: 'array',
+      defaultsTo: [],
     },
-    // chores: {
-    //   collection: 'Session',
-    //   via: user
-    // },
+    upcomingChores: {
+      collection: 'Session',
+      via: 'user'
+    },
   }
 };

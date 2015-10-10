@@ -23,7 +23,7 @@ module.exports = {
     },
     state:{
     	type: 'string',
-    	enum: ['pending', 'completed'],
+    	enum: ['upcoming', 'pending', 'completed'],
     	required: true,
     },
     preferedTime: {

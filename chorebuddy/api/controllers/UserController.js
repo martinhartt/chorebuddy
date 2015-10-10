@@ -12,6 +12,7 @@ module.exports = {
 			house: req.param('house'),
 			manager: req.param('manager'),
 			phoneNumber: req.param('phoneNumber'),
+			isManager: req.param('isManager'),
 		})
 		.then(user => {
 			res.json({ data: user });
@@ -22,7 +23,15 @@ module.exports = {
 	},
 
 	addPreferedDays: (req, res) => {
-
+		User.update(req.id, {
+			preferedDays: req.param('preferedDays'),
+		})
+		.then(user => {
+			res.json({ data: user });
+		})
+		.catch(err => {
+			res.json({ error: err});
+		});
 	},
 
 

@@ -8,7 +8,7 @@
 module.exports = {
 
   attributes: {
-  	id:{
+  	id: {
   		type: 'integer',
   		primaryKey: true,
   		unique: true,
@@ -29,6 +29,6 @@ module.exports = {
   	time: {
   		type: 'string',
   		required: true,
-  	},
+  	}
   }
 };
