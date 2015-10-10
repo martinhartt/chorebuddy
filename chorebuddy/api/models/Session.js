@@ -13,6 +13,24 @@ module.exports = {
       primaryKey: true,
       unique: true,
     },
-    
+    chore:{
+    	model: 'Chore',
+    	required: true.
+    },
+    user:{
+    	model: 'User',
+    	required: true,
+    },
+    state{
+    	type: 'string'
+    	enum: ['pending', 'completed'],
+    	required: true,
+    },
+    preferedTime{
+    	type: 'datetime',
+    },
+    completedOn{
+    	type: 'datetime',
+    },
   }
 };

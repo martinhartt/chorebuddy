@@ -20,6 +20,9 @@ module.exports = {
       model: 'User'
       required: true,
     },
+    isHead{
+      type: 'model',
+    },
     preferedDate:{
       type: 'date'
     },
