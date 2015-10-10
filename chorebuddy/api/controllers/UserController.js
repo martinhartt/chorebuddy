@@ -21,14 +21,12 @@ module.exports = {
 		});
 	},
 
-	addPreferedDay: (req, res) => {
+	addPreferedDays: (req, res) => {
 		User.findOne(req.param('id'))
 		.then(user => {
-			var days = user.preferedDays;
-			days.push(req.param('day'));
-			console.log(days);
-			return User.update(user.id, {
-				preferedDays: days,
+			console.log(req.param('days').split(','));
+			return User.update(user, {
+				preferedDays: req.param('days').split(','),
 			});
 		})
 		.then(user => {
