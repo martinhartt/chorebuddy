@@ -8,10 +8,6 @@ module.exports = {
 
 	},
 
-	addUser: (req, res) => {
-		res.ok();
-	},
-
 	addTask: (req, res) =>
 		res.ok();
 	},
