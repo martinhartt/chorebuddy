@@ -30,15 +30,9 @@ module.exports = {
 			res.json({ data: user });
 		})
 		.catch(err => {
-			console.log(err);
 			res.json({ error: err});
 		});
 	},
-
-	addUser: (req, res) => {
-		res.ok();
-	},
-
 	addTask: (req, res) => {
 		res.ok();
 	},
