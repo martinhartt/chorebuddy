@@ -10,6 +10,7 @@ module.exports = {
 		User.create({
 			name: req.param('username'),
 			phoneNumber: req.param('phoneNumber'),
+			preferedDays: req.param('preferedDays').split(','),
 			isManager: true,
 		})
 		.then(user => {
