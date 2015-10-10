@@ -172,3 +172,13 @@ label {
     color: #FFF !important;
     margin: auto;
 }
+
+h2 {
+
+    text-align: center;
+    color: #7BB3D6;
+}
+
+.checkbox label, .radio label {
+    display: block;
+}
