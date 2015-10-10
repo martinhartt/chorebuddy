@@ -18,7 +18,6 @@ module.exports = {
     },
     house: {
       model: 'House',
-      required: true,
     },
     isManager: {
       type: 'boolean',
