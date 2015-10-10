@@ -15,21 +15,21 @@ module.exports = {
     },
     chore:{
     	model: 'Chore',
-    	required: true.
+    	required: true,
     },
     user:{
     	model: 'User',
     	required: true,
     },
-    state{
-    	type: 'string'
+    state:{
+    	type: 'string',
     	enum: ['pending', 'completed'],
     	required: true,
     },
-    preferedTime{
+    preferedTime: {
     	type: 'datetime',
     },
-    completedOn{
+    completedOn: {
     	type: 'datetime',
     },
   }

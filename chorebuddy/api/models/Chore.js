@@ -26,9 +26,9 @@ module.exports = {
       type: 'array',
       defaultsTo: [],
     },
-  	time{
+  	time: {
   		type: 'string',
   		required: true,
-  	}
+  	},
   }
 };

@@ -18,10 +18,10 @@ module.exports = {
     },
     house:{
       model: 'User'
-      required: true,
     },
-    isHead{
+    isHead:{
       type: 'model',
+      required: true,
     },
     preferedDate:{
       type: 'date'

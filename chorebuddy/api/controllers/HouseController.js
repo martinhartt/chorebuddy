@@ -14,7 +14,7 @@ module.exports = {
 		res.ok();
 	},
 
-	addTask: (req, res) =>
+	addTask: (req, res) => {
 		res.ok();
 	},
 
