@@ -31,5 +31,9 @@ module.exports = {
       collection: 'Session',
       via: 'user'
     },
+    phoneNumber: {
+      type: 'string',
+      required: true,
+    }
   }
 };

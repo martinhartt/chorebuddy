@@ -10,7 +10,6 @@ module.exports = {
 		User.create({
 			name: req.param('name'),
 			house: req.param('house'),
-			manager: req.param('manager'),
 			phoneNumber: req.param('phoneNumber'),
 			isManager: req.param('isManager'),
 		})
@@ -22,9 +21,15 @@ module.exports = {
 		});
 	},
 
-	addPreferedDays: (req, res) => {
-		User.update(req.id, {
-			preferedDays: req.param('preferedDays'),
+	addPreferedDay: (req, res) => {
+		User.findOne(req.param('id'))
+		.then(user => {
+			var days = user.preferedDays;
+			days.push(req.param('day'));
+			console.log(days);
+			return User.update(user.id, {
+				preferedDays: days,
+			});
 		})
 		.then(user => {
 			res.json({ data: user });
