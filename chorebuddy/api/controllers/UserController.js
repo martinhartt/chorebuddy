@@ -11,7 +11,7 @@ module.exports = {
 			name: req.param('name'),
 			house: req.param('house'),
 			phoneNumber: req.param('phoneNumber'),
-			isManager: req.param('isManager'),
+			isManager: false,
 		})
 		.then(user => {
 			res.json({ data: user });

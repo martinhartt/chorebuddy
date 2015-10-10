@@ -8,21 +8,22 @@
 module.exports = {
 
   attributes: {
-  	name:{
+  	name: {
   		type: 'string',
   		required: true,
   	},
-    id:{
-      type: 'integer',
-      unique: true,
-      primaryKey: true,
-    },
-    name:{
-      type: 'string',
+    manager: {
+      model: 'User',
     },
   	members:{
   		collection: 'User',
   		via: 'house',
+      defaultsTo: [],
   	},
+    chores: {
+      collection: 'Chore',
+      via: 'house',
+      defaultsTo: [],
+    },
   }
 };
