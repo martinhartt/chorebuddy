@@ -18,8 +18,8 @@ module.exports = {
   		required: true,
   	},
   	repetition:{
-  		type: 'string'
-  		enum: ['daily', 'weekly', 'monthly'];
+  		type: 'string',
+  		enum: ['daily', 'weekly', 'monthly'],
   		required: true,
   	},
     days: {
