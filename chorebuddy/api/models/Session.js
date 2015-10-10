@@ -8,11 +8,6 @@
 module.exports = {
 
   attributes: {
-    id: {
-      type: 'integer',
-      primaryKey: true,
-      unique: true,
-    },
     chore:{
     	model: 'Chore',
     	required: true,

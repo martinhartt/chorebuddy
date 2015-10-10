@@ -8,15 +8,13 @@
 module.exports = {
 
   attributes: {
-  	id: {
-  		type: 'integer',
-  		primaryKey: true,
-  		unique: true,
-  	},
   	name:{
   		type: 'string',
   		required: true,
   	},
+    house: {
+      model: 'House',
+    },
   	repetition:{
   		type: 'string',
   		enum: ['daily', 'weekly', 'monthly'],
