@@ -33,11 +33,9 @@ module.exports = {
 			res.json({ error: err});
 		});
 	},
-	addTask: (req, res) => {
-		res.ok();
-	},
 
 	setup: (req, res) => {
+
 		res.ok();
 	},
 };

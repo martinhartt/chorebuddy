@@ -6,35 +6,20 @@
  */
 
 module.exports = {
-	create:(req, res) => {
+	create: (req, res) => {
 		Chore.create({
 			name: req.param('name'),
-			repetiton: req.param('repetiton'),
-			days: req.param('days'),
-			time: time.param('time'),
+			repetition: req.param('repetition'),
+			days: req.param('days').split(','),
+			time: req.param('time'),
+			house: req.param('house'),
 		})
 		.then(chore => {
-			res.json({ data: chore });
-		})
-		.catch(err => {
-			res.json({error : err});
-		})
-	},
-
-	edit:(req, res) =>{
-		Chore.update(req.id, {
-			name: req.param('name'),
-			repetiton: req.param('repetiton'),
-			days: req.param('days'),
-			time: time.param('time'),
-		})
-		.then(user => {
 			res.json({ data: chore });
 		})
 		.catch(err => {
 			res.json({ error: err});
 		});
 	},
-	
-};
 
+};
