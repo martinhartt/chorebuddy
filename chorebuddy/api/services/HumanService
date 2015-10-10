@@ -1,0 +1,16 @@
+/**
+ * HumanService
+ *
+ * @description :: The interface to communicate with users through text messages
+ */
+
+
+module.exports = {
+  sendMessage: () => {
+
+  },
+  
+  recieveMessage: () => {
+
+  }
+};
