@@ -1,0 +1,184 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  margin-bottom: 40px;
+}
+
+#faceLogo {
+    height: 50px;
+    margin-top: -15px;
+}
+
+
+p {
+  font-size: 17px;
+}
+
+.container {
+  max-width: 700px;
+}
+
+.navbar {
+    opacity: 1;
+    background-color: transparent;
+    border: 0px;
+}
+
+.nav.navbar-nav.pull-right li a {
+    color: #444;
+    font-size: 16px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    color: #444;
+}
+
+#name {
+    color: #000;
+}
+
+#description {
+    color: #000;
+}
+
+#home {
+    background-image: url(.././images/bg_img2.jpeg);
+    background-attachment: fixed;
+
+    height: 400px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+}
+
+.rowHomepage {
+    position: relative;
+    top: 80px;
+}
+
+.coloumn_onHomePage {
+    width: 100%;
+    position: relative;
+}
+
+label {
+    text-align: left !important;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media (max-width: 480px) {
+    /* This query is used for very small screens  */
+    #rectangle_BG {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 350px;
+        height: 94px;
+        z-index: -1;
+    }
+    #name {
+        font-size: 35px;
+    }
+    #description {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* This query is used for small screens  */
+    #rectangle_BG {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 400px;
+        height: 100px;
+        z-index: -1;
+    }
+    #name {
+        font-size: 40px;
+    }
+    #description {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    /* This query is used for medium screens  */
+    #rectangle_BG {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 500px;
+        height: 111px;
+        z-index: -1;
+    }
+    #name {
+        font-size: 45px;
+    }
+    #description {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 980px) {
+    /* This query is used for large screens  */
+    #rectangle_BG {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 600px;
+        height: 122px;
+        z-index: -1;
+        border-radius: 0x;
+    }
+    #name {
+        font-size: 50px;
+    }
+    #description {
+        font-size: 25px;
+    }
+}
+
+.btn {
+
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 0;
+    border-radius: 4px;
+    background: #7BB3D6 !important;
+    color: #FFF !important;
+    margin: auto;
+}
+
+h2 {
+
+    text-align: center;
+    color: #7BB3D6;
+}
+
+.checkbox label, .radio label {
+    display: block;
+}
