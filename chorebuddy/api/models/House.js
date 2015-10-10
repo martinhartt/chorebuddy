@@ -8,7 +8,19 @@
 module.exports = {
 
   attributes: {
-
+  	houseName{
+  		type: 'string',
+  		required: true,
+  	},
+  	houseID:{
+  		type: 'integer',
+  		unique: true,
+  		primaryKey: true,
+  	},
+  	Housemates:{
+  		collection: 'User',
+  		via: 'house',
+  	},
   }
 };
 
