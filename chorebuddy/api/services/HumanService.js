@@ -9,7 +9,7 @@ module.exports = {
 
   notify: (session) => {
   	var username = session.user.name;
-  	var usernumber = session.user.phonenumber;
+  	var usernumber = session.user.phoneNumber;
   	var chore = session.chore;
   	var content = `Hi, ${username}! You have been asigned
   	to do the ${chore} task!`;

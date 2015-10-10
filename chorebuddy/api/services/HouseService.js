@@ -8,7 +8,7 @@ module.exports = {
 
 	},
 
-	addTask: (req, res) =>
+	addTask: (req, res) => {
 		res.ok();
 	},
 
