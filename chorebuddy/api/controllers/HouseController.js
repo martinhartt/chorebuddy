@@ -6,6 +6,19 @@
  */
 
 module.exports = {
-	
-};
+	create: (req, res) => {
+		res.ok();
+	},
 
+	addUser: (req, res) => {
+		res.ok();
+	},
+
+	addTask: (req, res) =>
+		res.ok();
+	},
+
+	setup: (req, res) => {
+		res.ok();
+	},
+};

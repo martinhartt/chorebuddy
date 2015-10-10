@@ -6,6 +6,9 @@
  */
 
 module.exports = {
-	
-};
+	addPreferedDays: (req, res) => {
 
+	},
+	
+
+};
