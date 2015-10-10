@@ -1,0 +1,141 @@
+#faceLogo {
+    height: 50px;
+    margin-top: -15px;
+}
+
+.navbar {
+    opacity: 1;
+    background-color: transparent;
+    border: 0px;
+}
+
+.nav.navbar-nav.pull-right li a {
+    color: #e6e6e6;
+    font-size: 15px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    color: #262626;
+}
+
+
+#home {
+    background-image: url(.././images/BG_image2.jpg);
+    background-attachment: fixed;
+    height: 550px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+}
+
+.rowHomepage {
+    position: relative;
+    top: 275px;
+}
+
+.coloumn_onHomePage {
+    width: 100%;
+    position: relative;
+}
+
+
+@media (max-width: 480px) {
+  /* This query is used for very small screens  */
+    #rectangle_BG {
+        position: absolute;
+        left: 50%;
+        border: 5px solid white;
+        transform: translate(-50%, 0%);
+        width: 350px;
+        height: 94px;
+        z-index: -1;
+    }
+    #name {
+        font-size: 35px;
+    }
+    #description {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* This query is used for small screens  */
+    #rectangle_BG {
+        position: absolute;
+        left: 50%;
+        border: 5px solid white;
+        transform: translate(-50%, 0%);
+        width: 400px;
+        height: 100px;
+        z-index: -1;
+    }
+    #name {
+        font-size: 40px;
+    }
+    #description {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    /* This query is used for medium screens  */
+    #rectangle_BG {
+        position: absolute;
+        left: 50%;
+        border: 5px solid white;
+        transform: translate(-50%, 0%);
+        width: 500px;
+        height: 111px;
+        z-index: -1;
+    }
+    #name {
+        font-size: 45px;
+    }
+    #description {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 980px) {
+    /* This query is used for large screens  */
+    #rectangle_BG {
+        position: absolute;
+        left: 50%;
+        border: 5px solid white;
+        transform: translate(-50%, 0%);
+        width: 600px;
+        height: 122px;
+        z-index: -1;
+        border-radius: 0x;
+    }
+    #name {
+        font-size: 50px;
+    }
+    #description {
+        font-size: 25px;
+    }
+}
+
+/* css for about section */
+
+#about{
+background-color: #F7F7F7;
+    height: 550px;
+}
+
+#projects{
+    background-color: #1c1b1b;
+    height: 550px;
+}
+#contacts {
+	background-color: #3f7e7e;
+    height: 550px;
+}
