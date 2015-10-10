@@ -28,7 +28,6 @@ module.exports = {
     },
   	time: {
   		type: 'string',
-  		required: true,
-  	}
+  	},
   }
 };
